@@ -14,15 +14,22 @@
         grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
         grid-gap: 20px;
       }
+      .search{
+        border: 2px solid transparent;
+        box-sizing: border-box;
+      }
+      .search:focus{
+        border: 2px solid rgb(145, 255, 1);
+      }
     </style>
-    <div class="max-w-screen-lg mx-auto bg-white p-8 shadow-xl rounded-lg" style="background-color: rgba(121, 151, 82, 0.836);">
+    <div class="max-w-screen-lg mx-auto bg-white p-8 shadow-xl rounded-lg" style="background-color: rgba(121, 151, 82, 0.911);">
       <h1 class="text-4xl font-semibold text-white">Recipe Super Search</h1>
       <form class="search">
         <input
           type="text"
           name="query"
           autocomplete="off"
-          class="search border rounded w-full px-4 py-2 focus:outline-none focus:shadow-outline shadow-inner"
+          class="search border rounded w-full px-4 py-2 focus:outline-none"
           value=""
         />
         <button
@@ -30,7 +37,7 @@
           class="mt-4 font-semibold text-white rounded w-full px-4 py-2 focus:outline-none focus:shadow-outline shadow-inner disabled:opacity-50"
           style="background-color: rgb(145, 255, 1);"
         >
-          Submit
+          Find Recipes
         </button>
         <input class="checkbox" type="checkbox" name="" id="garlic">
         <label class="text-white" for="carlic">garlic</label>
