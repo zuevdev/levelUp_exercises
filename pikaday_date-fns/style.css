@@ -1,0 +1,11 @@
+@import './node_modules/pikaday/css/pikaday.css';
+body{
+    background-color: rgb(52, 165, 42);
+}
+.wrapper{
+    width: 100%;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
