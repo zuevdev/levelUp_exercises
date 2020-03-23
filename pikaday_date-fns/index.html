@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pikaday_Date-fns</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <p id="current">Today is </p>
+            <span>This date</span>
+            <input autocomplete="off" type="text" id="datepicker3" placeholder="chose a date">
+            <span id="answer1">is </span>
+            <div>
+                <span>The distace between</span>
+                <input autocomplete="off"  style="margin-top: 40px;" type="text" id="datepicker1">
+                <span>and</span>
+                <input autocomplete="off"  type="text" id="datepicker2" disabled>
+                <span id="answer2">is </span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./node_modules/pikaday/pikaday.js"></script>
+    <script type="module" src="./node_modules/date-fns-tz/index.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
